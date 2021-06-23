@@ -3,9 +3,7 @@ package repository.hibernate;
 import model.File;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.query.Query;
 import repository.FileRepository;
-
 import java.util.List;
 
 public class FileRepositoryImpl implements FileRepository {
