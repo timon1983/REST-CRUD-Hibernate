@@ -1,1 +1,1 @@
-web:    java -jar REST_API_Hibernate-1.0-SNAPSHOT.jar
+web: java -jar REST_API_Hibernate-1.0-SNAPSHOT.jar
