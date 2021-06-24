@@ -1,1 +1,1 @@
-web: java -jar target/dependency/webapp-runner.jar
+web: java -jar dependency/webapp-runner.jar REST_API_Hibernate-1.0-SNAPSHOT.jar
