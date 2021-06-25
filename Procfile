@@ -1,1 +1,1 @@
-web: java -jar target/dependency/webapp-runner.jar target/REST_API_Hibernate-1.0-SNAPSHOT.jar
+web: java -jar target/dependency/webapp-runner.jar --port 8080 target/*.war
