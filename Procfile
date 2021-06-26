@@ -1,1 +1,1 @@
-web: java -jar target/TestREST-1.0-SNAPSHOT.jar
+web: java -jar target/REST_API_Hibernate-1.0-SNAPSHOT.jar
