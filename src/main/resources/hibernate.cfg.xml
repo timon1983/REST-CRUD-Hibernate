@@ -3,10 +3,10 @@
 <hibernate-configuration>
     <session-factory>
 
-        <property name = "hibernate.connection.url">jdbc:mysql://eu-cdbr-west-01.cleardb.com:3306/heroku_e6008d8fbcece99</property>
+        <property name = "hibernate.connection.url">jdbc:mysql://eu-cdbr-west-01.cleardb.com:3306/heroku_7310f108e78e2c5</property>
         <property name = "hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name = "hibernate.connection.username">b856e80fbb7e4d</property>
-        <property name = "hibernate.connection.password">471c422c</property>
+        <property name = "hibernate.connection.username">b1dc30dcae0c7d</property>
+        <property name = "hibernate.connection.password">87209984</property>
         <property name = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <mapping class = "model.User"/>

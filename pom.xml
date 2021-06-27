@@ -90,9 +90,9 @@
             <version>5.2.4</version>
             <configuration>
                 <driver>com.mysql.cj.jdbc.Driver</driver>
-                <url>jdbc:mysql://eu-cdbr-west-01.cleardb.com:3306/heroku_e6008d8fbcece99</url>
-                <user>b856e80fbb7e4d</user>
-                <password>471c422c</password>
+                <url>jdbc:mysql://eu-cdbr-west-01.cleardb.com:3306/heroku_7310f108e78e2c5</url>
+                <user>b1dc30dcae0c7d</user>
+                <password>87209984</password>
             </configuration>
         </plugin>
 <!--        <plugin>-->
