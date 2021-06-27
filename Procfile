@@ -1,1 +1,0 @@
-web: java -jar target/REST_API_Hibernate-1.0-SNAPSHOT.jar
