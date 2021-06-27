@@ -7,6 +7,7 @@
     <groupId>org.example</groupId>
     <artifactId>REST_API_Hibernate</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -94,16 +95,16 @@
                 <password>471c422c</password>
             </configuration>
         </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <version>3.2.0</version>
-        </plugin>
 <!--        <plugin>-->
 <!--            <groupId>org.apache.maven.plugins</groupId>-->
-<!--            <artifactId>maven-war-plugin</artifactId>-->
-<!--            <version>3.3.1</version>-->
+<!--            <artifactId>maven-jar-plugin</artifactId>-->
+<!--            <version>3.2.0</version>-->
 <!--        </plugin>-->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.1</version>
+        </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
@@ -115,25 +116,30 @@
         </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-dependency-plugin</artifactId>
-            <version>3.2.0</version>
-            <executions>
-                <execution>
-                    <phase>package</phase>
-                    <goals><goal>copy</goal></goals>
-                    <configuration>
-                        <artifactItems>
-                            <artifactItem>
-                                <groupId>com.heroku</groupId>
-                                <artifactId>webapp-runner</artifactId>
-                                <version>8.5.61.0</version>
-                                <destFileName>webapp-runner.jar</destFileName>
-                            </artifactItem>
-                        </artifactItems>
-                    </configuration>
-                </execution>
-            </executions>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version>
         </plugin>
+<!--        <plugin>-->
+<!--            <groupId>org.apache.maven.plugins</groupId>-->
+<!--            <artifactId>maven-dependency-plugin</artifactId>-->
+<!--            <version>3.2.0</version>-->
+<!--            <executions>-->
+<!--                <execution>-->
+<!--                    <phase>package</phase>-->
+<!--                    <goals><goal>copy</goal></goals>-->
+<!--                    <configuration>-->
+<!--                        <artifactItems>-->
+<!--                            <artifactItem>-->
+<!--                                <groupId>com.heroku</groupId>-->
+<!--                                <artifactId>webapp-runner</artifactId>-->
+<!--                                <version>8.5.61.0</version>-->
+<!--                                <destFileName>webapp-runner.jar</destFileName>-->
+<!--                            </artifactItem>-->
+<!--                        </artifactItems>-->
+<!--                    </configuration>-->
+<!--                </execution>-->
+<!--            </executions>-->
+<!--        </plugin>-->
         <plugin>
             <groupId>com.heroku.sdk</groupId>
             <artifactId>heroku-maven-plugin</artifactId>
